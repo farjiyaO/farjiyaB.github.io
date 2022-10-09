@@ -1,0 +1,51 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+header, footer{
+    background-color: #031D44;
+    color: white;
+    padding: 1px;
+    margin: 1px;
+}
+.site-title{
+    color: azure;
+}
+#my-image{
+    border: 1px solid red;
+    box-shadow: 0 0 2px 1px black;
+}
+.hobbies{
+    list-style-type:square;
+}
+.hobbies:nth-child(1){
+    background-color: bisque;
+}
+.navbar{
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+#navlist{
+    text-decoration: none;
+    color: white;
+    padding:2px;
+}
+.navlink{
+    background-color: #031D44;
+    color: azure;
+    border: 2px solid purple;
+    padding:2px;
+    
+}
+a:link, a:active{
+    text-decoration: none;
+}
+a:hover{
+    background-color: white;
+    color: blueviolet;
+    border: 2px solid purple;
+}
+.footer-link{
+    color: azure;
+}

@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Home</title>
 </head>
 <body>
     <header>
-        <h1 id="top">Farjiya Benta Mahbub</h1>
+        <h1 id="top" class="site-title">Farjiya Benta Mahbub</h1>
     </header>
     
     <main>
     <!-- Navigation-->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a> </li>
-            <li><a href="notes.html">Notes </a></li>
+    <nav id="navlist">
+        <ul class="demo" >
+            <li class="navbar"><a href="index.html" class=" navlink">Home</a> </li>
+            <li class="navbar"><a href="notes.html" class=" navlink">Notes </a></li>
         </ul>
     </nav>
     <!-- About-->
@@ -34,14 +35,14 @@
     <!-- Image -->
     <article>
         <h3 >Images</h3>
-        <img src="images/profile-image.jpg" alt=" A girl" style="border: 1px solid rgb(249, 225, 229)">
+        <img src="images/profile-image.jpg" alt=" A girl" id="my-image">
     </article>
     <!--Hobbies -->
     <article>
         <h3>My Hobbies</h3>
         <ul>
-            <li>Baking</li>
-            <li>Coding</li>
+            <li class="hobbies">Baking</li>
+            <li class="hobbies">Coding</li>
         </ul>
     </article>
     </main>
@@ -50,7 +51,7 @@
     <!-- footer-->
     <footer>
         <p>
-            <a href="#top"> &uarr; Go to top</a>
+            <a href="#top" class="footer-link"> &uarr; Go to top</a>
         </p>
        <p> &copy; Copyright 2022, All right Preserved</p> 
     </footer>
