@@ -17,13 +17,13 @@ header{
 /* adds style to image */
 header img{
     width: 100%;
+    height: 240px;
     padding: 0;
     margin: 0;
 }
 /* adds style headings */
 .container {
     position: relative;
-    text-align: center;
     color:white;
     font-size: 18px;
     height: 240px;
@@ -31,10 +31,12 @@ header img{
   }
   /* make the headings centered */
 .centered {
+    width: 75%;
     position: absolute;
-    top: 75%;
-    left: 50%;
+    top: 50%;
+    left: 75%;
     transform: translate(-50%, -50%);
+  
 }
 
 /* adds width to navbar */
