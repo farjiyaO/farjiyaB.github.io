@@ -3,80 +3,108 @@ defeat box model
 */
 *{
     box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+/* adds backgraound color to the body and selectes font-family for webpage*/ 
 body{
     background-color:#aad4cf;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+/* adds width and position to  headers */
 header{
-    background-image: url("../images/lone-starfish-wide.jpg");
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
     position: relative;
 }
-
-h1{
+/* adds style to image */
+header img{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+/* adds style headings */
+.container {
+    position: relative;
+    text-align: center;
     color: white;
+    font-size: 36px;
+    height: 240px;
+  }
+  /* make the headings centered */
+.centered {
     position: absolute;
-    top: 50%;
-    left: 35%;
-    font-size: 48px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+/* adds width to navbar */
 .navigation{
     width: 100%;
-    margin: 3px;
+    margin: 8px;
     overflow: auto;
 }
-
-/* removes the underlines  */
+/* adds style to navbar links */
 .navigation a{
     text-decoration: none;
+    border-right: 1px solid grey;
     float: left;
     padding: 12px;
     color: black;
     text-decoration: none;
     font-size: 17px;
     width: 33.33%; 
-    text-align: center;
-    border-right: 2px solid grey;
-   }
+    text-align: center; 
+ }
+ /* adds backgraound color while hover on link*/ 
+.navigation a:hover{
+    background-color:azure;
+    cursor:pointer
+}
+
+/* removes border from last link*/ 
+.navigation a:last-child {
+    border-right:0;
+}
+/* adds background color and centers the div*/ 
 .wrapper{
     background-color:rgb(216,232,231);
     width: 80%;
     margin: 0 auto;
 }
+/* adds style to image */
 img{
     width: 150px;
     float: left;
     margin: 8px;
 }
+/* adds style to headings */
 .abtStarfish h3{
     margin: 8px;
 }
+/* adds padding to the paragraph  */
 .abtStarfish p{
     padding: 4px;
 }
+
+/* maintains the position after adding float property to elements*/
 .clearFix::after{
     content: '';
     display: block;
     clear: both;
 }
 
-/*Facts*/
+/* adds padding to the Facts*/
 .facts{
     padding: 3px;
-    
 }
+/* adds margin to headings */
 .facts h3{
     margin: 8px;
 }
-
+/* adds margin headings */
 .contact h3{
     margin: 8px;
-
 }
+/* adds border to from and style to the input and style to the button */
 #form{
     border: 1px solid black;
     padding:15px 10px;
@@ -102,8 +130,8 @@ button{
     height: 35px;
     background-color:rgb(216,232,231);
 }
+/* adds style to footer*/
 footer{
     padding: 10px;
     text-align: right;
-  
 }
