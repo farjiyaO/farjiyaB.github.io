@@ -24,9 +24,10 @@ header img{
 .container {
     position: relative;
     text-align: center;
-    color: white;
-    font-size: 24px;
+    color:red;
+    font-size: 18px;
     height: 240px;
+
   }
   /* make the headings centered */
 .centered {
