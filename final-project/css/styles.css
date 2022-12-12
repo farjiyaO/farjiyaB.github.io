@@ -1,1 +1,312 @@
+/*
+defeat box model
+*/
+* {
+    box-sizing: border-box;
+}
 
+/* adds font family for the site */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* adds banner for nav menu*/
+.nav {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+}
+
+/* removes decoration from nav menu */
+.nav a {
+    color: #c78c06;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+/* adds hover action on nav menu */
+.nav a:hover {
+    background-color: #c78c06;
+    color: #222;
+    width: 99%;
+}
+
+/* adds background for logo*/
+.logo-img {
+    background-color: #c78c06;
+    width: 99%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* add design to the search bar */
+.form {
+    width: 99%;
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+}
+
+.search-icon {
+    background-color: #222;
+    border: 1px solid #c78c06;
+    font-size: 24px;
+}
+
+.fa-search {
+    color: #c78c06;
+}
+
+/* adds background image in the welcome-content */
+.background-img {
+    background-image: url("../images/main-banner.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 70px 0;
+}
+
+/* adds background color in the welcome-content */
+.welcome-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+}
+
+/* adds design for the button in the welcome-content */
+.welcome-content button {
+    background-color: #c78c06;
+    border: 1px solid #c78c06;
+    color: black;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+/* adds font size and font-weight to the welcome content */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.welcome-content p {
+    font-size: 14px;
+    padding: 10px 0;
+    margin: 5px;
+    font-weight: 300;
+
+
+}
+
+/* adds design to the about section*/
+.abtus-content {
+    background-color: #ffe6ac;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.abtus-content img {
+    width: 100%;
+}
+
+.abt-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.abt-content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* service */
+p {
+    font-weight: 300;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.services-heading {
+    margin: 10px;
+}
+
+.card {
+    background-color: #ffe6ac;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin: 10px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-btn {
+    background-color: #222;
+    color: #FFFFFF;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.card p {
+    margin: 8px;
+    padding: 10px 0px;
+}
+
+.card i {
+    font-size: 24px;
+    padding: 5px;
+    margin: 0 10px;
+}
+
+/* vision */
+.vision-row {
+    background-image: url("../images/vision.jpg");
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.vision-row i {
+    font-size: 24px;
+    padding: 5px;
+    margin: 0 10px;
+}
+
+.vision-content h3 {
+    padding-top: 10px;
+}
+
+.vision-content button {
+    background-color: #222;
+    color: #FFFFFF;
+    border: 1px solid #c78c06;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.vision-content p {
+    margin: 8px;
+    padding: 10px 0px;
+}
+
+/* team */
+.team-heading {
+    margin: 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.employee-content h3 {
+    border-bottom: 2px solid #c78c06;
+    font-size: 14px;
+}
+
+.employee-content h2 {
+    margin: 0 10px;
+    padding-top: 10px;
+}
+
+.employee-content p {
+    padding: 10px 0px 20px 0px;
+}
+
+.contact-heading{
+    margin: 10px;
+}
+.contact-form button{
+    background-color: #222;
+    color: #c78c06;
+    border: 2px solid #222;
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+   }
+   .contact-form input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #222;
+   }
+   
+   textarea{
+    width: 100%;
+    padding: 10px;
+   }
+   .contact-form{
+    margin: 10px;
+   } 
+   .contact-form h3{
+    
+   }
+   
+
+/* creates design for the operation table */
+th,
+td {
+    border: 1px solid;
+    padding: 10px;
+}
+
+th {
+    background-color: #ffe6ac;
+}
+
+.op-table h2 {
+    margin: 10px;
+    padding: 10px 0;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid;
+    width: 100%;
+}
+
+.tbl {
+    margin: 10px;
+}
+
+/* creates design for the location */
+.loc-img {
+    margin: 10px;
+}
+iframe{
+    width: 100%;
+}
+.location h2{
+    margin: 10px;
+    padding: 10px 0;
+}
+
+/* creates design for the footer with copyright */
+.footer {
+    background-color: #222;
+    color: #c78c06;
+    padding: 10px;
+}
+
+.footer a {
+    color: #c78c06;
+}
