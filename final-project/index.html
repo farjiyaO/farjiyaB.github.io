@@ -29,28 +29,32 @@
     <div class="navigation">
         <!-- creates Navigation for the menu-->
         <div class="nav">
-            <div class="logo-img">
-                <img src="images/logo.png" alt="logo of the company">
-            </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#service">Services</a></li>
-                <li><a href="#teams">Team</a></li>
-                <li><a href="#contacts">Contact</a></li>
-            </ul>
-            <!--creates the searching option-->
-            <div class="form">
-                <form action="#" method="get">
-                    <input type="text" placeholder="Search" name="search" class="search">
-                    <button class="search-icon"><i class="fa fa-search "></i></button>
-                </form>
+            <div class="wrapper navbar">
+                <div class="logo-img ">
+                    <img src="images/logo.png" alt="logo of the company">
+                </div>
+                <div class="navlist">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#teams">Team</a></li>
+                        <li><a href="#contacts">Contact</a></li>
+                    </ul>
+                </div>
+                <!--creates the searching option-->
+                <div class="form">
+                    <form action="#" method="get">
+                        <input type="text" placeholder="Search" name="search" class="search">
+                        <button class="search-icon"><i class="fa fa-search "></i></button>
+                    </form>
+                </div>
             </div>
 
         </div>
 
         <!-- adding 2nd div for the backgroung image and the welcome content -->
-        <div class="wrapper background-img">
+        <div class="background-img">
             <!-- adds background image -->
             <div class="welcome-content">
                 <h1>Welcome to Three Star Media</h1>
@@ -69,82 +73,87 @@
 
 
         <!-- creats a abt-content class for holding the about image and content-->
-        <div class="abtus-content wrapper" id="about-us">
-            <div class="abt-img">
-                <img src="images/about-us.jpg" alt="image for the about">
-            </div>
-            <div class="abt-content">
-                <h2>About Us</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias repellendus quos molestiae
-                    non sequi minus aspernatur nihil quia, quae nesciunt corporis esse? Reprehenderit, vitae et?
-                    Quasi illo est in quo.</p>
-                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo nulla, veritatis placeat
-                    culpa ut omnis voluptatibus a sint velit, minus similique nihil voluptatum cumque.
-                    Perferendis quod autem fuga quaerat vero.
-                </p>
+        <div class="abtus-content" id="about-us">
+            <div class="abt-container">
+                <div class="abt-img">
+                    <img src="images/about-us.jpg" alt="image for the about">
+                </div>
+                <div class="abt-content">
+                    <h2>About Us</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias repellendus quos molestiae
+                        non sequi minus aspernatur nihil quia, quae nesciunt corporis esse? Reprehenderit, vitae et?
+                        Quasi illo est in quo.</p>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo nulla, veritatis placeat
+                        culpa ut omnis voluptatibus a sint velit, minus similique nihil voluptatum cumque.
+                        Perferendis quod autem fuga quaerat vero.
+                    </p>
+                </div>
             </div>
         </div>
 
         <!-- creates a services class for holding the service related information-->
         <div class="services wrapper" id="service">
             <div class="services-heading">
-                <h2>Our Services</h2>
+                <h1>Our Services</h1>
             </div>
 
-            <!-- creates a card for digital -->
-            <div class="card digital">
-                <img src="images/digital.jpg" alt="image of digital transformation">
-                <h3>Digital Transformation</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit molestiae deserunt,
-                    suscipit in asperiores magnam expedita inventore aperiam et dolor dignissimos officia
-                    perferendis nisi consectetur sint laudantium ipsa nesciunt?</p>
-                <button class="card-btn"> Digital Plans <i class="fa fa-caret-right"></i></button>
+            <div class="service">
+                <!-- creates a card for digital -->
+                <div class="card digital">
+                    <img src="images/digital.jpg" alt="image of digital transformation">
+                    <h3>Digital Transformation</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit molestiae deserunt,
+                        suscipit in asperiores magnam expedita inventore aperiam et dolor dignissimos officia
+                        perferendis nisi consectetur sint laudantium ipsa nesciunt?</p>
+                    <button class="card-btn"> Digital Plans <i class="fa fa-caret-right"></i></button>
+                </div>
+
+                <!-- creates a card for marketing -->
+                <div class="card marketing">
+                    <img src="images/marketing.jpg" alt="image of marketing">
+
+                    <h3>Marketing</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptates quos pariatur
+                        officiis culpa! Inventore accusamus magni ab obcaecati labore esse reiciendis illum? Maiores
+                        ducimus perspiciatis, sit blanditiis excepturi dolorum.</p>
+                    <button class="card-btn">Marketing Plans <i class="fa fa-caret-right"></i></button>
+                </div>
+
+                <!-- creates a card for video prodution -->
+                <div class="card videoprod">
+                    <img src="images/video.jpg" alt="image of video production">
+                    <h3>Video Production</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptates quos pariatur
+                        officiis culpa! Inventore accusamus magni ab obcaecati labore esse reiciendis illum? Maiores
+                        ducimus perspiciatis, sit blanditiis excepturi dolorum.</p>
+                    <button class="card-btn">Video Plans <i class="fa fa-caret-right fa-2x"></i></button>
+                </div>
+
+                <!-- creates a card for web development -->
+                <div class="card webdevelopment">
+                    <img src="images/web.jpg" alt="image of web development">
+                    <h3>Web Development</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptates quos pariatur
+                        officiis culpa! Inventore accusamus magni ab obcaecati labore esse reiciendis illum? Maiores
+                        ducimus perspiciatis, sit blanditiis excepturi dolorum.</p>
+                    <button class="card-btn">Web Plans<i class="fa fa-caret-right"></i></button>
+                </div>
+                <!-- creates a card for print -->
+                <div class="card print">
+                    <img src="images/print.jpg" alt="image of print">
+                    <h3>Print</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptates quos pariatur
+                        officiis culpa! Inventore accusamus magni ab obcaecati labore esse reiciendis illum? Maiores
+                        ducimus perspiciatis, sit blanditiis excepturi dolorum.</p>
+                    <button class="card-btn">Print Plans<i class="fa fa-caret-right"></i></button>
+                </div>
             </div>
 
-            <!-- creates a card for marketing -->
-            <div class="card marketing">
-                <img src="images/marketing.jpg" alt="image of marketing">
-
-                <h3>Marketing</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptates quos pariatur
-                    officiis culpa! Inventore accusamus magni ab obcaecati labore esse reiciendis illum? Maiores
-                    ducimus perspiciatis, sit blanditiis excepturi dolorum.</p>
-                <button class="card-btn">Marketing Plans <i class="fa fa-caret-right"></i></button>
-            </div>
-
-            <!-- creates a card for video prodution -->
-            <div class="card videoprod">
-                <img src="images/video.jpg" alt="image of video production">
-                <h3>Video Production</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptates quos pariatur
-                    officiis culpa! Inventore accusamus magni ab obcaecati labore esse reiciendis illum? Maiores
-                    ducimus perspiciatis, sit blanditiis excepturi dolorum.</p>
-                <button class="card-btn">Video Plans <i class="fa fa-caret-right fa-2x"></i></button>
-            </div>
-
-            <!-- creates a card for web development -->
-            <div class="card webdevelopment">
-                <img src="images/web.jpg" alt="image of web development">
-                <h3>Web Development</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptates quos pariatur
-                    officiis culpa! Inventore accusamus magni ab obcaecati labore esse reiciendis illum? Maiores
-                    ducimus perspiciatis, sit blanditiis excepturi dolorum.</p>
-                <button class="card-btn">Web Plans<i class="fa fa-caret-right"></i></button>
-            </div>
-            <!-- creates a card for print -->
-            <div class="card print">
-                <img src="images/print.jpg" alt="image of print">
-                <h3>Print</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptates quos pariatur
-                    officiis culpa! Inventore accusamus magni ab obcaecati labore esse reiciendis illum? Maiores
-                    ducimus perspiciatis, sit blanditiis excepturi dolorum.</p>
-                <button class="card-btn">Print Plans<i class="fa fa-caret-right"></i></button>
-            </div>
         </div>
 
         <!-- creates Vision class with all the vision info-->
-        <div class="vision-row wrapper">
-            <div class="vision-content">
+        <div class="vision-row ">
+            <div class="vision-content wrapper">
                 <h3>Our Vision</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel asperiores nulla rem nihil doloribus
                     dolorem ducimus dicta, numquam nesciunt recusandae explicabo minima tempora tenetur! Quas hic
@@ -158,11 +167,12 @@
             <div class="team-heading">
                 <h1>Our Team</h1>
             </div>
+
             <div class="employee-card1 card">
-                <div class="employee-1-img">
+                <div class="employee-1-img ">
                     <img src="images/john.jpg" alt="employee-1 image">
                 </div>
-                <div class="employee-content">
+                <div class="employee-content emp1">
                     <h2>John Doe</h2>
                     <h3>CEO and Co-owner</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nobis similique itaque
@@ -171,10 +181,10 @@
                 </div>
             </div>
             <div class="employee-card2 card">
-                <div class="employee-2-img">
+                <div class="employee-2-img ">
                     <img src="images/bob.jpg" alt="employee-2 image">
                 </div>
-                <div class="employee-content">
+                <div class="employee-content emp2">
                     <h2>Bob Rite</h2>
                     <h3>CFO and Co-owner</h3>
 
@@ -183,28 +193,29 @@
                         illum quaerat quam molestiae cumque modi magni quasi.</p>
                 </div>
             </div>
+
         </div>
 
         <!-- creates contact class for holding the contact form, location map and operatoion table-->
         <div class="contact-row wrapper" id="contacts">
             <div class="contact-heading">
-                <h2>Contact Us</h2>
+                <h1>Contact Us</h1>
             </div>
             <!-- creates contact form -->
-            <h3>Send us a message</h3>
-            <div class="contact-form">
-                
-                <form action="#" method="get">
-                    <label for="fname">Full Name</label>
-                    <input type="text" id="fname">
-                    <label for="email">Email</label>
-                    <input type="email" id="email">
-                    <label for="msg">Message</label>
-                    <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-                    <button> Send</button>
-                </form>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h2>Send us a message</h2>
+                    <form action="#" method="get">
+                        <label for="fname">Full Name</label>
+                        <input type="text" id="fname">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                        <label for="msg">Message</label>
+                        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                        <button> Send</button>
+                    </form>
 
-            </div>
+                </div>
                 <div class="op-table">
                     <h2>Hours of operation</h2>
                     <div class="tbl">
@@ -225,7 +236,7 @@
                     </div>
                 </div>
 
-                <div class="location wraper">
+                <div class="location">
                     <h2>Location</h2>
                     <div class="loc-img">
                         <iframe
@@ -234,16 +245,17 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
-        <!-- creates the footer with copyright -->
-        <div class="footer">
-            <div class="footer-content">
-                <p>&copy; Copyright Three Star Media, 2020</p>
-                <p>All images are taken from <a href="">Unsplash</a></p>
-            </div>
+    </div>
+
+    <!-- creates the footer with copyright -->
+    <div class="footer">
+        <div class="footer-content">
+            <p>&copy; Copyright Three Star Media, 2020</p>
+            <p>All images are taken from <a href="">Unsplash</a></p>
         </div>
+    </div>
 </body>
 
 </html>
