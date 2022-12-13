@@ -233,33 +233,37 @@ h3 {
 .employee-content p {
     padding: 10px 0px 20px 0px;
 }
+
 /* adds design to the contact section */
-.contact-heading{
+.contact-heading {
     margin: 10px;
 }
-.contact-form button{
+
+.contact-form button {
     background-color: #222;
     color: #c78c06;
     border: 2px solid #222;
     font-size: 20px;
     margin-top: 8px;
     margin-bottom: 8px;
-   }
-   .contact-form input{
+}
+
+.contact-form input {
     width: 100%;
     padding: 10px;
     border: 1px solid #222;
-   }
-   
-   textarea{
+}
+
+textarea {
     width: 100%;
     padding: 10px;
-   }
-   .contact-form{
-    margin: 10px;
-   } 
+}
 
-   
+.contact-form {
+    margin: 10px;
+}
+
+
 
 /* creates design for the operation table */
 th,
@@ -291,10 +295,12 @@ table {
 .loc-img {
     margin: 10px;
 }
-iframe{
+
+iframe {
     width: 100%;
 }
-.location h2{
+
+.location h2 {
     margin: 10px;
     padding: 10px 0;
 }
@@ -315,131 +321,154 @@ iframe{
 
 @media screen and (min-width:760px) {
     
-    .nav li{
+    /* creates a horizontal navbar for desktop model*/
+    .nav li {
         float: left;
         width: 20%;
     }
-    
-    .logo-img{
+
+    .logo-img {
         width: 100px;
         display: block;
         padding: 0;
     }
-    .nav a:hover{
+
+    .nav a:hover {
         padding: 10px;
     }
-    .navbar{
+
+    .navbar {
         display: grid;
         grid-template-columns: 1fr 5fr 2fr;
-        padding: 10px 0 ;  
+        padding: 10px 0;
     }
-    .form form{
+
+    .form form {
         display: flex;
         flex-direction: row;
-        padding-top:10px ;
-    }
-    .navlist{
         padding-top: 10px;
     }
-    
-    .welcome-content{
-        width:90%;
+
+    .navlist {
+        padding-top: 10px;
+    }
+
+    /* makes the welcome content in the middle for deesktop */
+    .welcome-content {
+        width: 90%;
         margin: 0 auto;
         padding: 10px;
     }
-    /* designs for about us in the desktop version */
-    .abt-container{
+
+    /* makes the about us image and content side by side by adding display flex */
+    .abt-container {
         width: 90%;
         display: flex;
         flex-direction: row;
         margin: 0 auto;
         padding: 10px;
     }
-    .abt-content{
+
+    .abt-content {
         margin-left: 15px;
     }
+
     /* put the employee card side by side using display flex  */
-    
-    .employee-card1{
+
+    .employee-card1 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .employee-1-img{
+
+    .employee-1-img {
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: 0;
     }
-    .emp1{
+
+    .emp1 {
         flex: 1 1 0;
 
     }
-    .employee-card2{
+
+    .employee-card2 {
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
     }
-    .emp2{
+
+    .emp2 {
         flex: 1 1 0
     }
-    .employee-2-img{
+
+    .employee-2-img {
         flex: 1 1 0;
     }
-    
+
     /* using display grid design the service section */
-    .service{
+    .service {
         display: grid;
-        grid-template-columns: repeat(6,1fr);   
-        grid-template-areas: 
-        "digital digital digital marketing marketing marketing"
-        "videoprod videoprod webdevelopment webdevelopment print print";
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+            "digital digital digital marketing marketing marketing"
+            "videoprod videoprod webdevelopment webdevelopment print print";
     }
-    .digital{
+
+    .digital {
         grid-area: digital;
     }
-    .print{
+
+    .print {
         grid-area: print;
     }
-    .marketing{
+
+    .marketing {
         grid-area: marketing;
     }
-    .videoprod{
+
+    .videoprod {
         grid-area: videoprod;
     }
-    .webdevelopment{
-        grid-area:webdevelopment;
+
+    .webdevelopment {
+        grid-area: webdevelopment;
     }
-    .wrapper{
+     
+    /* adds width and padding for all the section  */
+    .wrapper {
         width: 90%;
-        margin:0 auto;
+        margin: 0 auto;
     }
-    .card button{
+
+    .card button {
         width: 95%;
     }
-
-    .contact-container{
-        display: grid; 
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(3,1fr);     
+ 
+    /* using display grid the design the contact div puting the form and location map side by side each other.  */
+    .contact-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
-    .contact-container .contact-form{
-        grid-column: 1 / span 2 ;
-        grid-row: 1 / span 3 ;
-      }
-    .contact-container .location{
+
+    .contact-container .contact-form {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 3;
+    }
+
+    .contact-container .location {
         grid-column: 3 / span 3;
-        grid-row: 1 / span 3 ;
+        grid-row: 1 / span 3;
 
     }
-    .contact-container .op-table{
-        grid-column: 1 / span 4 ;
+
+    .contact-container .op-table {
+        grid-column: 1 / span 4;
         grid-row: 3 / span 3;
-    }  
-    iframe{
+    }
+
+    iframe {
         height: 320px;
     }
-
-
-    
-    
 }
